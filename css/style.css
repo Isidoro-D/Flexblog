@@ -1,0 +1,85 @@
+/*:root equivcale a toda a estruturado elemento html, é parecida com a tag "html" com a diferença que a especificidade de "Root" é maior*/
+:root {
+    --Background-blue-dark: #122ab2;
+    --Background-blue-Bright: #2c70ff;
+    --Background-Gray-soft: #f7f7f7;
+    --Row-Purple: #ae81ff;
+    --Row-Pink: #f9265e;
+    --Row-blue: #66d9eb;
+    --Color-gray-Soft: #a4a4a4;
+    --Color-gray-Strong: #7c7c7c;
+    --Color-Black-Bright: #222222;
+}
+
+/*Cada navegador tem seus próprios Paddings e Margin, então sempre zere como padrão*/
+/*Tudo que for resetar no pagina, fazer antes de qualquer outro elemento*/
+/* Gerais - Reset */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+.superinfo-bg {
+    background-color: var(--Background-blue-dark);
+    color: #fff;
+}
+
+.superinfo {
+    display: flex;
+    flex-wrap: wrap;
+    /*Espaçamento entre elementos*/
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.superinfo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bg {
+    background-color: var(--Background-blue-Bright);
+    padding: 15px 0;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*Alinha o elemento na vertical*/
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.menu-logo a {
+    font-weight: bold;
+    font-size: 2.25em;
+}
+
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: var(--Background-blue-dark);
+    transition: 7ms;
+}
